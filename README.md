@@ -1,1 +1,1 @@
-# Classificador-bin-rio-de-vozes
+# Classificador-binrio-de-vozes
