@@ -39,7 +39,11 @@ Python 3.9+
 bibliotecas principais:
 
 • numpy, pandas
+
 • scikit-learn
+
 • scipy
+
 • matplotlib / seaborn
+
 • librosa (para manipulação de áudio)
