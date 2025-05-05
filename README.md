@@ -4,13 +4,21 @@ Este repositório contém o código e a documentação de um projeto acadêmico 
 
 📋 Sumário
 • Visão Geral
+
 • Tecnologias e Dependências
+
 • Estrutura do Projeto
+
 • Pré-processamento dos Dados
+
 • Métodos e Algoritmos
+
 • Como Executar
+
 • Resultados
+
 • Boas Práticas e Dicas de Melhoria de Código
+
 • Contribuições
 • Licença
 
