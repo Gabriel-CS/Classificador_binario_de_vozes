@@ -1,49 +1,94 @@
-# Classificador binario de vozes
+# 🎙️ Classificador Binário de Vozes (Male vs. Female)
 
-Este repositório contém o código e a documentação de um projeto acadêmico de classificação binária de vozes, desenvolvido como trabalho avaliativo na universidade.
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-orange)
 
-📋 Sumário
-• Visão Geral
+## 📖 Sobre o Projeto
 
-• Tecnologias e Dependências
+Este projeto foi desenvolvido como trabalho avaliativo da disciplina de **Tópicos de Matemática Aplicada**. O objetivo principal foi colocar em prática os métodos matemáticos e estatísticos apresentados em aula para resolver um problema real de classificação.
 
-• Estrutura do Projeto
+O sistema consiste em um **Classificador Binário de Vozes**, capaz de distinguir entre fala masculina e feminina. Para isso, utilizamos a linguagem **Python** para implementar um pipeline completo de processamento de dados, desde a extração de features de áudio até a comparação de diferentes algoritmos de aprendizado de máquina.
 
-• Pré-processamento dos Dados
+## 🚀 Pipeline e Metodologia
 
-• Métodos e Algoritmos
+O desenvolvimento do projeto seguiu um fluxo estruturado de processamento de dados e modelagem:
 
-• Como Executar
+1.  **Pré-processamento de Áudio:**
+    *   Coleta de dados brutos de áudio (homens e mulheres).
+    *   Extração de escalas de áudio e conversão para dados estruturados em **CSV**.
+    *   Extração e limpeza de características (features).
 
-• Resultados
+2.  **Matemática e Estatística Aplicada:**
+    *   **PCA (Principal Component Analysis):** Estimativa e redução de dimensionalidade para otimizar os dados.
+    *   **K-means & Método da Silhueta:** Avaliação de agrupamentos não supervisionados para entender a separabilidade das classes.
+    *   **Triangulação de Delaunay:** Construção de vizinhanças geométricas para análise estrutural dos dados.
 
-• Boas Práticas e Dicas de Melhoria de Código
+3.  **Classificação Supervisionada:**
+    *   Treinamento e comparação de desempenho entre três algoritmos:
+        *   🌲 **Random Forest**
+        *   🔍 **KNN (K-Nearest Neighbors)**
+        *   📐 **SVM (Support Vector Machine)**
 
-• Contribuições
-• Licença
+## 🛠️ Tecnologias Utilizadas
 
-Visão Geral
+*   **Linguagem:** Python
+*   **Manipulação de Dados:** Pandas, NumPy
+*   **Processamento de Áudio:** [Librosa]
+*   **Machine Learning:** Scikit-Learn
+*   **Visualização:** Matplotlib, Seaborn
+*   **Ambiente:** Jupyter Notebook / VS Code
 
-O objetivo deste projeto é construir um classificador binário que distingu entre dois tipos de vozes (por exemplo, fala masculina vs. feminina). O pipeline inclui:
+## 📊 Conjunto de Dados
 
-1. Extração e pré-processamento de características de áudio.
-2. Extimativa e Redução de dimensionalidade com PCA.
-3. Avaliação de agrupamentos usando K-means e método de silhueta.
-4. Construção de vizinhança baseada em Triangulação de Delaunay.
-5. Treinamento e comparação de classificadores: Random Forest, KNN e SVM.
+Os dados utilizados neste projeto são provenientes de um banco de dados público disponível no **Kaggle**, contendo amostras de áudio de vozes masculinas e femininas.
 
-Tecnologias e Dependências
+*   **Fonte:** [Inserir Link do Dataset no Kaggle se houver]
+*   **Formato:** Arquivos de áudio (.wav/.mp3) convertidos para CSV.
 
-Python 3.9+
+## 📦 Como Rodar o Projeto
 
-bibliotecas principais:
+Siga os passos abaixo para executar o código em sua máquina local:
 
-• numpy, pandas
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+    ```
 
-• scikit-learn
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd NOME_DO_REPOSITORIO
+    ```
 
-• scipy
+3.  **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Certifique-se de criar um arquivo requirements.txt com as bibliotecas usadas)*
 
-• matplotlib / seaborn
+4.  **Execute o notebook ou script principal:**
+    ```bash
+    # Exemplo para Jupyter
+    jupyter notebook analisis_vozes.ipynb
 
-• librosa (para manipulação de áudio)
+    # Ou script Python
+    python main.py
+    ```
+
+## 📈 Resultados
+
+*(Opcional: Adicione aqui um breve resumo ou gráfico de qual classificador teve melhor acurácia)*
+
+| Classificador | Acurácia |
+| :--- | :--- |
+| **Random Forest** | [Inserir %] |
+| **SVM** | [Inserir %] |
+| **KNN** | [Inserir %] |
+
+## 👥 Autores
+
+*   **[Seu Nome]** - [Seu GitHub](https://github.com/Gabriel-CS)
+*   **[Nome do Colega]** - 
+
+
+---
+*Projeto acadêmico desenvolvido para a disciplina de Tópicos de Matemática Aplicada.*
